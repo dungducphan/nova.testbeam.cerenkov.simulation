@@ -68,7 +68,7 @@ G4VPhysicalVolume * LSDetectorConstruction::Construct() {
                          13*cm  , //pRMax1,
                          30*cm  , //pRMin2,
                          33*cm  , //pRMax2,
-                         15*m   , //Dz,
+                         15*cm   , //Dz,
                          0     , //pSPhi,
                          twopi);   //pDPhi)
   coneLog = new G4LogicalVolume(cone, fAl, "ConeLog", 0, 0, 0);
