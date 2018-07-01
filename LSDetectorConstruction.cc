@@ -133,7 +133,7 @@ G4VPhysicalVolume * LSDetectorConstruction::Construct() {
   mirrorPhy = new G4PVPlacement(rotm2, G4ThreeVector(0,0,-1.1*m), mirrorLog, "MirrorPhy", worldLog, false, 0);
 
 
-  conePhy = new G4PVPlacement(0, G4ThreeVector(0,0,-1.2*m), coneLog, "ConePhy", worldLog, false, 0);
+  conePhy = new G4PVPlacement(0, G4ThreeVector(0,0,-1.3*m), coneLog, "ConePhy", worldLog, false, 0);
 
   worldPhy = new G4PVPlacement(0, G4ThreeVector(), worldLog, "WorldPhy", 0, false, 0, checkOverlaps);
 
