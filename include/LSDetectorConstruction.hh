@@ -12,6 +12,7 @@
 #include "G4PVPlacement.hh"
 #include "G4SystemOfUnits.hh"
 #include "G4VisAttributes.hh"
+#include "G4Cons.hh"
 #include "globals.hh"
 
 #include <cmath>
@@ -69,7 +70,14 @@ private:
   G4Box * mirrorBox;
   G4LogicalVolume * mirrorLog;
   G4VPhysicalVolume * mirrorPhy;
-
+  
+  /**
+   * CONE
+   */
+  G4Cons* cone;
+  G4LogicalVolume * coneLog;
+  G4VPhysicalVolume * conePhy;
+  
   /**
    * MATERIALS
    */

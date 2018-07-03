@@ -60,6 +60,19 @@ G4VPhysicalVolume * LSDetectorConstruction::Construct() {
   mirrorBox = new G4Box("MirrorBox", mirror_hx/2., mirror_hy/2., mirror_hz/2.);
   mirrorLog = new G4LogicalVolume(mirrorBox, fAl, "MirrorLog", 0, 0, 0);
 
+  /**
+   * [cone Volume description]
+   */
+  cone = new G4Cons("Cone",
+                         30*cm  , //pRMin1,
+                         33*cm  , //pRMax1,
+                         10*cm  , //pRMin2,
+                         13*cm  , //pRMax2,
+                         15*cm   , //Dz,
+                         0     , //pSPhi,
+                         twopi);   //pDPhi)
+  coneLog = new G4LogicalVolume(cone, fAl, "ConeLog", 0, 0, 0);
+
   // Set Visual Properties
   G4VisAttributes* mirrorVA = new G4VisAttributes();
   mirrorVA->SetColor(G4Colour(0.6, 0.6, 0.6));
@@ -118,7 +131,10 @@ G4VPhysicalVolume * LSDetectorConstruction::Construct() {
   CO2Phy = new G4PVPlacement(0, G4ThreeVector(0,0,0), CO2Log, "CO2Phy", worldLog, false, 0);
   detectorPhy = new G4PVPlacement(rotm1, G4ThreeVector(-50*cm,0,-1.08*m), detectorLog, "DetectorPhy", worldLog, false, 0);
   mirrorPhy = new G4PVPlacement(rotm2, G4ThreeVector(0,0,-1.1*m), mirrorLog, "MirrorPhy", worldLog, false, 0);
+  conePhy = new G4PVPlacement(rotm1, G4ThreeVector(-30*cm,0,-1.08*m), coneLog, "ConePhy", worldLog, false, 0);
   worldPhy = new G4PVPlacement(0, G4ThreeVector(), worldLog, "WorldPhy", 0, false, 0, checkOverlaps);
+
+
 
   //---------------------------------------------------------------------------------------------------
   /**
@@ -156,6 +172,16 @@ G4VPhysicalVolume * LSDetectorConstruction::Construct() {
   opMirrorSurface->SetFinish(polished);
   opMirrorSurface->SetModel(unified);
   G4LogicalSkinSurface* mirrorSurface = new G4LogicalSkinSurface("DetectorSurface", mirrorLog, opMirrorSurface);
+
+  /**
+   * Surface Properties of Cone
+   * */
+  G4OpticalSurface* opConeSurface = new G4OpticalSurface("ConeSurface");
+  opMirrorSurface->SetType(dielectric_metal);
+  opMirrorSurface->SetFinish(polished);
+  opMirrorSurface->SetModel(unified);
+  G4LogicalSkinSurface* coneSurface = new G4LogicalSkinSurface("DetectorSurface", coneLog, opConeSurface);
+
 
   //---------------------------------------------------------------------------------------------------
   /**
