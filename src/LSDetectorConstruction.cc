@@ -240,7 +240,38 @@ G4VPhysicalVolume * LSDetectorConstruction::Construct() {
   mirrorMPT->AddProperty("REFLECTIVITY", ephoton_mirror, reflectivity_mirror, 4)->SetSpline(true);
   mirrorMPT->AddProperty("EFFICIENCY",   ephoton_mirror, efficiency_mirror,   4)->SetSpline(true);
   opMirrorSurface->SetMaterialPropertiesTable(mirrorMPT);
+  
+  /**
+   * Photon Transport Properties for Reflective Cone Surface
+   * */
 
+  std::vector<double> ev1_al;
+  std::vector<double> refl_al;
+  double t_ev1_al, t_refl_al;
+
+  std::ifstream refl_al_data("../refl_al.txt");
+  while (refl_al_data >> t_ev1_al >> t_refl_al) {
+	ev1_al.push_back(t_ev1_al);
+	refl_al.push_back(t_refl_al);
+  }
+
+  double* ephoton_r_cone = (double*) malloc(ev1_al.size() * sizeof(double));
+  double* reflectivity_cone = (double*) malloc(ev1_al.size() * sizeof(double));
+
+  for (unsigned int i = 0; i < ev1_al.size(); i++){
+	ephoton_r_cone[i] = ev1_al.at(i);
+	reflectivity_cone[i] = refl_al.at(i);
+  }
+
+  G4double ephoton_e_cone[4]      = {0.0001*eV, 1*eV, 10*eV, 100*eV};
+  G4double efficiency_cone[4]   = {0.0,0.0,0.0,0.0};
+
+  G4MaterialPropertiesTable *coneMPT = new G4MaterialPropertiesTable();
+  coneMPT->AddProperty("REFLECTIVITY", ephoton_r_cone, reflectivity_cone, ev1_al.size())->SetSpline(true);
+  coneMPT->AddProperty("EFFICIENCY",   ephoton_e_cone, efficiency_cone, 4)->SetSpline(true);
+  opMirrorSurface->SetMaterialPropertiesTable(coneMPT);
+
+  
   return worldPhy;
 }
 
