@@ -54,18 +54,20 @@ private:
   /**
    * Detector VOLUME
    */
-  G4double detector_hx = 0.3 * m;
-  G4double detector_hy = 0.3 * m;
+  G4double detector_hx = 0.05 * m;
+  G4double detector_hy = 0.05 * m;
+  G4double detector_radius = 4*2.54*cm;
   G4double detector_hz = 0.0001 * m;
-  G4Box * detectorBox;
+  //G4Box * detectorBox;
+  G4Tubs * detectorBox;
   G4LogicalVolume * detectorLog;
   G4VPhysicalVolume * detectorPhy;
 
   /**
-   * Mirrow VOLUME
+   * Mirror VOLUME
    */
-  G4double mirror_hx = 0.35 * m;
-  G4double mirror_hy = 0.35 * m;
+  G4double mirror_hx = 0.5 * m;
+  G4double mirror_hy = 0.5 * m;
   G4double mirror_hz = 0.001 * m;
   G4Box * mirrorBox;
   G4LogicalVolume * mirrorLog;

@@ -51,7 +51,13 @@ G4VPhysicalVolume * LSDetectorConstruction::Construct() {
   /**
    * [detector Volume description]
    */
-  detectorBox = new G4Box("DetectorBox", detector_hx/2., detector_hy/2., detector_hz/2.);
+  //detectorBox = new G4Box("DetectorBox", detector_hx/2., detector_hy/2., detector_hz/2.);
+  detectorBox = new G4Tubs("DetectorBox",
+                         0*cm  , //pRMin,
+                         detector_radius , //pRMax,
+                         detector_hz   , //Dz, Half length in z
+                         0     , //pSPhi,
+                         twopi);   //pDPhi)
   detectorLog = new G4LogicalVolume(detectorBox, fAl, "DetectorLog", 0, 0, 0);
 
   /**
@@ -64,11 +70,11 @@ G4VPhysicalVolume * LSDetectorConstruction::Construct() {
    * [cone Volume description]
    */
   cone = new G4Cons("Cone",
-                         30*cm  , //pRMin1,
-                         33*cm  , //pRMax1,
-                         10*cm  , //pRMin2,
-                         13*cm  , //pRMax2,
-                         15*cm   , //Dz,
+                         15*cm  , //pRMin1,
+                         16*cm  , //pRMax1,
+                         3.5*2.54*cm  , //pRMin2,
+                         3.5*2.54*cm + 1*cm , //pRMax2,
+                         30*cm   , //Dz,
                          0     , //pSPhi,
                          twopi);   //pDPhi)
   coneLog = new G4LogicalVolume(cone, fAl, "ConeLog", 0, 0, 0);
@@ -83,17 +89,17 @@ G4VPhysicalVolume * LSDetectorConstruction::Construct() {
    * [cherenkovEnviroment description]
    */
   targetBox = new G4Tubs("TargetTubs",
-                          7*cm  , //pRMin,
-                          8*cm  , //pRMax,
-                          1*m   , //Dz,
+                          14*cm  , //pRMin,
+                          15*cm  , //pRMax,
+                          1*m   , //Dz, Half length in z
                           0     , //pSPhi,
                           twopi);   //pDPhi)
   targetLog = new G4LogicalVolume(targetBox, fAl,"TargetLog", 0, 0, 0);
 
   CO2Box = new G4Tubs("CO2Tubs",
                          0*cm  , //pRMin,
-                         7*cm  , //pRMax,
-                         1*m   , //Dz,
+                         14*cm  , //pRMax,
+                         1*m   , //Dz, Half length in z
                          0     , //pSPhi,
                          twopi);   //pDPhi)
   CO2Log = new G4LogicalVolume(CO2Box, fCO2,"CO2Log", 0, 0, 0);
@@ -127,11 +133,12 @@ G4VPhysicalVolume * LSDetectorConstruction::Construct() {
   G4ThreeVector w2 = G4ThreeVector( std::cos(phi2),0., std::sin(phi2));
   G4RotationMatrix* rotm2 = new G4RotationMatrix(u2, v2, w2);
 
+
   targetPhy = new G4PVPlacement(0, G4ThreeVector(0,0,0), targetLog, "TargetPhy", worldLog, false, 0);
   CO2Phy = new G4PVPlacement(0, G4ThreeVector(0,0,0), CO2Log, "CO2Phy", worldLog, false, 0);
-  detectorPhy = new G4PVPlacement(rotm1, G4ThreeVector(-50*cm,0,-1.08*m), detectorLog, "DetectorPhy", worldLog, false, 0);
-  mirrorPhy = new G4PVPlacement(rotm2, G4ThreeVector(0,0,-1.1*m), mirrorLog, "MirrorPhy", worldLog, false, 0);
-  conePhy = new G4PVPlacement(rotm1, G4ThreeVector(-30*cm,0,-1.08*m), coneLog, "ConePhy", worldLog, false, 0);
+  detectorPhy = new G4PVPlacement(rotm1, G4ThreeVector(-85*cm,0,-1.2*m), detectorLog, "DetectorPhy", worldLog, false, 0);
+  mirrorPhy = new G4PVPlacement(rotm2, G4ThreeVector(0,0,-1.2*m), mirrorLog, "MirrorPhy", worldLog, false, 0);
+  conePhy = new G4PVPlacement(rotm1, G4ThreeVector(-52*cm,0,-1.2*m), coneLog, "ConePhy", worldLog, false, 0);
   worldPhy = new G4PVPlacement(0, G4ThreeVector(), worldLog, "WorldPhy", 0, false, 0, checkOverlaps);
 
 

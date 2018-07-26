@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="LSsim"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="clang"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\Geant4-10.3.3\;CMake Files\..\..\..\..\..\usr\local\lib\Geant4-10.3.3\Modules\;CMake Files\..\..\..\..\..\usr\local\opt\;CMake Files\..\..\..\..\..\usr\local\opt\qt\;CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\;CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Core\;CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Gui\;CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Widgets\;CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5OpenGL\;CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5PrintSupport\;CMake Files\..\..\..\ROOTPy\;CMake Files\..\..\..\ROOTPy\root-6.12.06-install\;CMake Files\..\..\..\ROOTPy\root-6.12.06-install\cmake\;CMake Files\..\..\..\ROOTPy\root-6.12.06-install\cmake\modules\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LSsim">
+				<Option output="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/LSsim" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-DG4_STORE_TRAJECTORY"/>
+					<Add option="-DG4VERBOSE"/>
+					<Add option="-DG4UI_USE"/>
+					<Add option="-DG4VIS_USE"/>
+					<Add option="-DG4MULTITHREADED"/>
+					<Add option="-DG4UI_USE_TCSH"/>
+					<Add option="-DG4INTY_USE_XT"/>
+					<Add option="-DG4VIS_USE_RAYTRACERX"/>
+					<Add option="-DG4INTY_USE_QT"/>
+					<Add option="-DG4UI_USE_QT"/>
+					<Add option="-DG4VIS_USE_OPENGLQT"/>
+					<Add option="-DG4VIS_USE_OPENGLX"/>
+					<Add option="-DG4VIS_USE_OPENGL"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_PRINTSUPPORT_LIB"/>
+					<Add option="-DQT_OPENGL_LIB"/>
+					<Add directory="/usr/local/include/Geant4"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/dphan/ROOTPy/root-6.12.06-install/include"/>
+					<Add directory="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/include"/>
+					<Add directory="/usr/local/opt/qt/lib/QtWidgets.framework"/>
+					<Add directory="/usr/local/opt/qt/lib/QtWidgets.framework/Headers"/>
+					<Add directory="/usr/local/opt/qt/lib/QtGui.framework"/>
+					<Add directory="/usr/local/opt/qt/lib/QtGui.framework/Headers"/>
+					<Add directory="/System/Library/Frameworks/OpenGL.framework/Headers"/>
+					<Add directory="/usr/local/opt/qt/lib/QtCore.framework"/>
+					<Add directory="/usr/local/opt/qt/lib/QtCore.framework/Headers"/>
+					<Add directory="/usr/local/opt/qt/./mkspecs/macx-clang"/>
+					<Add directory="/usr/local/opt/qt/lib/QtPrintSupport.framework"/>
+					<Add directory="/usr/local/opt/qt/lib/QtPrintSupport.framework/Headers"/>
+					<Add directory="/usr/local/opt/qt/lib/QtOpenGL.framework"/>
+					<Add directory="/usr/local/opt/qt/lib/QtOpenGL.framework/Headers"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 LSsim"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LSsim/fast">
+				<Option output="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/LSsim" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-DG4_STORE_TRAJECTORY"/>
+					<Add option="-DG4VERBOSE"/>
+					<Add option="-DG4UI_USE"/>
+					<Add option="-DG4VIS_USE"/>
+					<Add option="-DG4MULTITHREADED"/>
+					<Add option="-DG4UI_USE_TCSH"/>
+					<Add option="-DG4INTY_USE_XT"/>
+					<Add option="-DG4VIS_USE_RAYTRACERX"/>
+					<Add option="-DG4INTY_USE_QT"/>
+					<Add option="-DG4UI_USE_QT"/>
+					<Add option="-DG4VIS_USE_OPENGLQT"/>
+					<Add option="-DG4VIS_USE_OPENGLX"/>
+					<Add option="-DG4VIS_USE_OPENGL"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_PRINTSUPPORT_LIB"/>
+					<Add option="-DQT_OPENGL_LIB"/>
+					<Add directory="/usr/local/include/Geant4"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/dphan/ROOTPy/root-6.12.06-install/include"/>
+					<Add directory="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/include"/>
+					<Add directory="/usr/local/opt/qt/lib/QtWidgets.framework"/>
+					<Add directory="/usr/local/opt/qt/lib/QtWidgets.framework/Headers"/>
+					<Add directory="/usr/local/opt/qt/lib/QtGui.framework"/>
+					<Add directory="/usr/local/opt/qt/lib/QtGui.framework/Headers"/>
+					<Add directory="/System/Library/Frameworks/OpenGL.framework/Headers"/>
+					<Add directory="/usr/local/opt/qt/lib/QtCore.framework"/>
+					<Add directory="/usr/local/opt/qt/lib/QtCore.framework/Headers"/>
+					<Add directory="/usr/local/opt/qt/./mkspecs/macx-clang"/>
+					<Add directory="/usr/local/opt/qt/lib/QtPrintSupport.framework"/>
+					<Add directory="/usr/local/opt/qt/lib/QtPrintSupport.framework/Headers"/>
+					<Add directory="/usr/local/opt/qt/lib/QtOpenGL.framework"/>
+					<Add directory="/usr/local/opt/qt/lib/QtOpenGL.framework/Headers"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 LSsim/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/LSsim.cc">
+			<Option target="LSsim"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/include/LSActionInitialization.hh">
+			<Option target="LSsim"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/include/LSDetectorConstruction.hh">
+			<Option target="LSsim"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/include/LSEventAction.hh">
+			<Option target="LSsim"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/include/LSPhysicsList.hh">
+			<Option target="LSsim"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/include/LSPrimaryGeneratorAction.hh">
+			<Option target="LSsim"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/include/LSRunAction.hh">
+			<Option target="LSsim"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/include/LSSteppingAction.hh">
+			<Option target="LSsim"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/include/LSTrackerHit.hh">
+			<Option target="LSsim"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/include/LSTrackerSD.hh">
+			<Option target="LSsim"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/src/LSActionInitialization.cc">
+			<Option target="LSsim"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/src/LSDetectorConstruction.cc">
+			<Option target="LSsim"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/src/LSEventAction.cc">
+			<Option target="LSsim"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/src/LSPhysicsList.cc">
+			<Option target="LSsim"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/src/LSPrimaryGeneratorAction.cc">
+			<Option target="LSsim"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/src/LSRunAction.cc">
+			<Option target="LSsim"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/src/LSSteppingAction.cc">
+			<Option target="LSsim"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/src/LSTrackerHit.cc">
+			<Option target="LSsim"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/src/LSTrackerSD.cc">
+			<Option target="LSsim"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/vis.mac">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/gui.mac">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/lib/Geant4-10.3.3/Geant4ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\Geant4-10.3.3\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/lib/Geant4-10.3.3/Geant4Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\Geant4-10.3.3\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/lib/Geant4-10.3.3/Geant4LibraryDepends.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\Geant4-10.3.3\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/lib/Geant4-10.3.3/Geant4LibraryDepends-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\Geant4-10.3.3\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/lib/Geant4-10.3.3/UseGeant4.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\Geant4-10.3.3\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/lib/Geant4-10.3.3/Modules/IntelCompileFeatures.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\Geant4-10.3.3\Modules\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Core/Qt5CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Gui/Qt5Gui_QCocoaIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Gui/Qt5Gui_QMacJp2Plugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Gui/Qt5Gui_QWebGLIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Widgets/Qt5Widgets_QMacStylePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5OpenGL/Qt5OpenGLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5OpenGL\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5OpenGL/Qt5OpenGLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5OpenGL\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5PrintSupport/Qt5PrintSupportConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5PrintSupport\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5PrintSupport/Qt5PrintSupportConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5PrintSupport\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../../../usr/local/opt/qt/lib/cmake/Qt5PrintSupport/Qt5PrintSupport_QCocoaPrinterSupportPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opt\qt\lib\cmake\Qt5PrintSupport\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../ROOTPy/root-6.12.06-install/cmake/ROOTConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\ROOTPy\root-6.12.06-install\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../ROOTPy/root-6.12.06-install/cmake/ROOTConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\ROOTPy\root-6.12.06-install\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../ROOTPy/root-6.12.06-install/cmake/ROOTConfig-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\ROOTPy\root-6.12.06-install\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../ROOTPy/root-6.12.06-install/cmake/ROOTConfig-targets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\ROOTPy\root-6.12.06-install\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../ROOTPy/root-6.12.06-install/cmake/ROOTUseFile.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\ROOTPy\root-6.12.06-install\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/../../../ROOTPy/root-6.12.06-install/cmake/modules/RootNewMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\ROOTPy\root-6.12.06-install\cmake\modules\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
