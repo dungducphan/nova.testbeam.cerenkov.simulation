@@ -206,7 +206,7 @@ G4VPhysicalVolume * LSDetectorConstruction::Construct() {
    * Photon Transport Properties for Detector Surface
    * */
 
-  std::ifstream m16data("/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/M16Corrected2-3.csv");
+  std::ifstream m16data("~/nova.testbeam.cerenkov/optical.sim/tag_v2.0/nova.testbeam.cerenkov.simulation/build/HamPMT8In.csv");
   std::vector<G4double> wavelength, qe;
   double x, y;
   while (m16data >> x >> y) {
@@ -243,7 +243,7 @@ G4VPhysicalVolume * LSDetectorConstruction::Construct() {
 //  G4double efficiency_mirror[4]   = {0.0,0.0,0.0,0.0};
 
 // For complex reflextivity
-  std::ifstream uvcutoff("/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/cmake-build-debug/uvcutoff.csv");
+  std::ifstream uvcutoff("~/nova.testbeam.cerenkov/optical.sim/tag_v2.0/nova.testbeam.cerenkov.simulation/build/ESR-Anna.csv");
   std::vector<G4double> wavelength_reflec, reflec;
   while (uvcutoff >> x >> y) {
     wavelength_reflec.push_back(x);
