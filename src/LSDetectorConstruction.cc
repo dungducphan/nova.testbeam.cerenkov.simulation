@@ -72,8 +72,8 @@ G4VPhysicalVolume * LSDetectorConstruction::Construct() {
   cone = new G4Cons("Cone",
                          15*cm  , //pRMin1,
                          16*cm  , //pRMax1,
-                         4*2.54*cm  , //pRMin2,
-                         4*2.54*cm + 1*cm , //pRMax2,
+                         3.5*2.54*cm  , //pRMin2,
+                         3.5*2.54*cm + 1*cm , //pRMax2,
                          30*cm   , //Dz,
                          0     , //pSPhi,
                          twopi);   //pDPhi)
@@ -136,7 +136,7 @@ G4VPhysicalVolume * LSDetectorConstruction::Construct() {
 
   targetPhy = new G4PVPlacement(0, G4ThreeVector(0,0,0), targetLog, "TargetPhy", worldLog, false, 0);
   CO2Phy = new G4PVPlacement(0, G4ThreeVector(0,0,0), CO2Log, "CO2Phy", worldLog, false, 0);
-  detectorPhy = new G4PVPlacement(rotm1, G4ThreeVector(-82.2*cm,0,-1.2*m), detectorLog, "DetectorPhy", worldLog, false, 0);
+  detectorPhy = new G4PVPlacement(rotm1, G4ThreeVector(-85*cm,0,-1.2*m), detectorLog, "DetectorPhy", worldLog, false, 0);
   mirrorPhy = new G4PVPlacement(rotm2, G4ThreeVector(0,0,-1.2*m), mirrorLog, "MirrorPhy", worldLog, false, 0);
   conePhy = new G4PVPlacement(rotm1, G4ThreeVector(-52*cm,0,-1.2*m), coneLog, "ConePhy", worldLog, false, 0);
   worldPhy = new G4PVPlacement(0, G4ThreeVector(), worldLog, "WorldPhy", 0, false, 0, checkOverlaps);
@@ -169,7 +169,7 @@ G4VPhysicalVolume * LSDetectorConstruction::Construct() {
   opDetectorSurface->SetType(dielectric_metal);
   opDetectorSurface->SetFinish(ground);
   opDetectorSurface->SetModel(glisur);
-  G4LogicalSkinSurface* detectorSurface = new G4LogicalSkinSurface("DetectorSkinSurface", detectorLog, opDetectorSurface);
+  G4LogicalSkinSurface* detectorSurface = new G4LogicalSkinSurface("DetectorSurface", detectorLog, opDetectorSurface);
 
   /**
    * Surface Properties of Mirror
@@ -178,16 +178,16 @@ G4VPhysicalVolume * LSDetectorConstruction::Construct() {
   opMirrorSurface->SetType(dielectric_metal);
   opMirrorSurface->SetFinish(polished);
   opMirrorSurface->SetModel(unified);
-  G4LogicalSkinSurface* mirrorSurface = new G4LogicalSkinSurface("MirrorSkinSurface", mirrorLog, opMirrorSurface);
+  G4LogicalSkinSurface* mirrorSurface = new G4LogicalSkinSurface("DetectorSurface", mirrorLog, opMirrorSurface);
 
   /**
    * Surface Properties of Cone
    * */
   G4OpticalSurface* opConeSurface = new G4OpticalSurface("ConeSurface");
-  opConeSurface->SetType(dielectric_metal);
-  opConeSurface->SetFinish(polished);
-  opConeSurface->SetModel(unified);
-  G4LogicalSkinSurface* coneSurface = new G4LogicalSkinSurface("ConeSkinSurface", coneLog, opConeSurface);
+  opMirrorSurface->SetType(dielectric_metal);
+  opMirrorSurface->SetFinish(polished);
+  opMirrorSurface->SetModel(unified);
+  G4LogicalSkinSurface* coneSurface = new G4LogicalSkinSurface("DetectorSurface", coneLog, opConeSurface);
 
 
   //---------------------------------------------------------------------------------------------------
@@ -195,7 +195,7 @@ G4VPhysicalVolume * LSDetectorConstruction::Construct() {
    * Photon Transport Properties for Housing-CO2 Surface
    * */
   G4double ephoton_housingCO2[2]      = {0.0001*eV, 100*eV};
-  G4double reflectivity_housingCO2[2] = {0.0, 0.0}; // Not realistic
+  G4double reflectivity_housingCO2[2] = {0.5, 0.5}; // Not realistic
   G4double efficiency_housingCO2[2]   = {0.0, 0.0};
   G4MaterialPropertiesTable *housingCO2MPT = new G4MaterialPropertiesTable();
   housingCO2MPT->AddProperty("REFLECTIVITY", ephoton_housingCO2, reflectivity_housingCO2, 2)->SetSpline(true);
@@ -206,7 +206,11 @@ G4VPhysicalVolume * LSDetectorConstruction::Construct() {
    * Photon Transport Properties for Detector Surface
    * */
 
+<<<<<<< HEAD
   std::ifstream m16data("~/nova.testbeam.cerenkov/optical.sim/tag_v2.0/nova.testbeam.cerenkov.simulation/build/HamPMT8In.csv");
+=======
+  std::ifstream m16data("/Users/dphan/Documents/CO2Cherenkov/Geant4Skeleton/M16Corrected2-3.csv");
+>>>>>>> parent of 66adc1c... Big commit
   std::vector<G4double> wavelength, qe;
   double x, y;
   while (m16data >> x >> y) {
@@ -224,18 +228,23 @@ G4VPhysicalVolume * LSDetectorConstruction::Construct() {
   for (unsigned short int idx = 0; idx < wavelength.size(); idx++) {
     ephoton_pmt[idx] = (1242.38 / wavelength.at(idx))*eV;
     reflectivity_pmt[idx] = 0.;
-    efficiency_pmt[idx] = (qe.at(idx))/100.;
+    efficiency_pmt[idx] = 1;//(qe.at(idx))/100.;
   }
 
+//  std::cout << wavelength.size() << std::endl;
+//  for (unsigned short int idx = 0; idx < wavelength.size(); idx++) {
+//    std::cout << ephoton_pmt[idx]/eV << " : " << efficiency_pmt[idx] << std::endl;
+//  }
 
   G4MaterialPropertiesTable *detectorMPT = new G4MaterialPropertiesTable();
-  detectorMPT->AddProperty("REFLECTIVITY", ephoton_pmt, reflectivity_pmt, wavelength.size())->SetSpline(false);
-  detectorMPT->AddProperty("EFFICIENCY",   ephoton_pmt, efficiency_pmt,   wavelength.size())->SetSpline(false);
+  detectorMPT->AddProperty("REFLECTIVITY", ephoton_pmt, reflectivity_pmt, wavelength.size())->SetSpline(true);
+  detectorMPT->AddProperty("EFFICIENCY",   ephoton_pmt, efficiency_pmt,   wavelength.size())->SetSpline(true);
   opDetectorSurface->SetMaterialPropertiesTable(detectorMPT);
 
   /**
    * Photon Transport Properties for Mirror Surface
    * */
+<<<<<<< HEAD
 
 // For simplified reflectivity
 //  G4double ephoton_mirror[4]      = {0.0001*eV, 1*eV, 10*eV, 100*eV};
@@ -264,13 +273,15 @@ G4VPhysicalVolume * LSDetectorConstruction::Construct() {
   }
 
 
+=======
+  G4double ephoton_mirror[4]      = {0.0001*eV, 1*eV, 10*eV, 100*eV};
+  G4double reflectivity_mirror[4] = {0.8,0.8,0.8,0.8};
+  G4double efficiency_mirror[4]   = {0.0,0.0,0.0,0.0};
+>>>>>>> parent of 66adc1c... Big commit
   G4MaterialPropertiesTable *mirrorMPT = new G4MaterialPropertiesTable();
-//  mirrorMPT->AddProperty("REFLECTIVITY", ephoton_mirror, reflectivity_mirror, 4)->SetSpline(false);
-//  mirrorMPT->AddProperty("EFFICIENCY",   ephoton_mirror, efficiency_mirror,   4)->SetSpline(false);
-  mirrorMPT->AddProperty("REFLECTIVITY", ephoton_mirror, reflectivity_mirror, wavelength_reflec.size())->SetSpline(false);
-  mirrorMPT->AddProperty("EFFICIENCY",   ephoton_mirror, efficiency_mirror,   wavelength_reflec.size())->SetSpline(false);
+  mirrorMPT->AddProperty("REFLECTIVITY", ephoton_mirror, reflectivity_mirror, 4)->SetSpline(true);
+  mirrorMPT->AddProperty("EFFICIENCY",   ephoton_mirror, efficiency_mirror,   4)->SetSpline(true);
   opMirrorSurface->SetMaterialPropertiesTable(mirrorMPT);
-  opConeSurface->SetMaterialPropertiesTable(mirrorMPT);
 
   return worldPhy;
 }

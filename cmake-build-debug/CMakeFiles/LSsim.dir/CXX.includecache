@@ -93,14 +93,6 @@ Randomize.hh
 ../include/Randomize.hh
 globals.hh
 ../include/globals.hh
-TH2.h
-../include/TH2.h
-TH1.h
-../include/TH1.h
-TRandom3.h
-../include/TRandom3.h
-cstdlib
--
 
 ../include/LSRunAction.hh
 G4UserRunAction.hh
@@ -139,14 +131,6 @@ LSTrackerHit.hh
 /Users/dphan/ROOTPy/root-6.12.06-install/include/DllImport.h
 
 /Users/dphan/ROOTPy/root-6.12.06-install/include/ESTLType.h
-
-/Users/dphan/ROOTPy/root-6.12.06-install/include/Fit/FitExecutionPolicy.h
-
-/Users/dphan/ROOTPy/root-6.12.06-install/include/Foption.h
-Fit/FitExecutionPolicy.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/Fit/FitExecutionPolicy.h
-
-/Users/dphan/ROOTPy/root-6.12.06-install/include/Math/TRandomEngine.h
 
 /Users/dphan/ROOTPy/root-6.12.06-install/include/RConfig.h
 RVersion.h
@@ -252,29 +236,13 @@ Rtypes.h
 string.h
 -
 
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TArrayC.h
-TArray.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TArray.h
-
 /Users/dphan/ROOTPy/root-6.12.06-install/include/TArrayD.h
-TArray.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TArray.h
-
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TArrayF.h
 TArray.h
 /Users/dphan/ROOTPy/root-6.12.06-install/include/TArray.h
 
 /Users/dphan/ROOTPy/root-6.12.06-install/include/TArrayI.h
 TArray.h
 /Users/dphan/ROOTPy/root-6.12.06-install/include/TArray.h
-
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TArrayS.h
-TArray.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TArray.h
-
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TAttAxis.h
-Rtypes.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/Rtypes.h
 
 /Users/dphan/ROOTPy/root-6.12.06-install/include/TAttFill.h
 Rtypes.h
@@ -287,14 +255,6 @@ Rtypes.h
 /Users/dphan/ROOTPy/root-6.12.06-install/include/TAttMarker.h
 Rtypes.h
 /Users/dphan/ROOTPy/root-6.12.06-install/include/Rtypes.h
-
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TAxis.h
-TNamed.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TNamed.h
-TAttAxis.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TAttAxis.h
-TArrayD.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TArrayD.h
 
 /Users/dphan/ROOTPy/root-6.12.06-install/include/TBasket.h
 TKey.h
@@ -396,12 +356,6 @@ TUUID.h
 TDirectory.h
 /Users/dphan/ROOTPy/root-6.12.06-install/include/TDirectory.h
 
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TError.h
-Rtypes.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/Rtypes.h
-stdarg.h
--
-
 /Users/dphan/ROOTPy/root-6.12.06-install/include/TFile.h
 atomic
 -
@@ -416,12 +370,6 @@ ROOT/TRWSpinLock.hxx
 mutex
 -
 
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TFitResultPtr.h
-Rtypes.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/Rtypes.h
-memory
--
-
 /Users/dphan/ROOTPy/root-6.12.06-install/include/TGenericClassInfo.h
 vector
 -
@@ -429,44 +377,6 @@ TSchemaHelper.h
 /Users/dphan/ROOTPy/root-6.12.06-install/include/TSchemaHelper.h
 Rtypes.h
 /Users/dphan/ROOTPy/root-6.12.06-install/include/Rtypes.h
-
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TH1.h
-TAxis.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TAxis.h
-TAttLine.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TAttLine.h
-TAttFill.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TAttFill.h
-TAttMarker.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TAttMarker.h
-TArrayC.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TArrayC.h
-TArrayS.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TArrayS.h
-TArrayI.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TArrayI.h
-TArrayF.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TArrayF.h
-TArrayD.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TArrayD.h
-Foption.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/Foption.h
-TVectorFfwd.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TVectorFfwd.h
-TVectorDfwd.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TVectorDfwd.h
-TFitResultPtr.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TFitResultPtr.h
-float.h
--
-
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TH2.h
-TH1.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TH1.h
-TMatrixFBasefwd.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TMatrixFBasefwd.h
-TMatrixDBasefwd.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TMatrixDBasefwd.h
 
 /Users/dphan/ROOTPy/root-6.12.06-install/include/THashTable.h
 TCollection.h
@@ -516,24 +426,6 @@ THashTable.h
 iterator
 -
 
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TMath.h
-Rtypes.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/Rtypes.h
-TMathBase.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TMathBase.h
-TError.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TError.h
-algorithm
--
-limits
--
-cmath
--
-float.h
--
-math.h
--
-
 /Users/dphan/ROOTPy/root-6.12.06-install/include/TMathBase.h
 Rtypes.h
 /Users/dphan/ROOTPy/root-6.12.06-install/include/Rtypes.h
@@ -541,14 +433,6 @@ cstdlib
 -
 cmath
 -
-
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TMatrixDBasefwd.h
-Rtypes.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/Rtypes.h
-
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TMatrixFBasefwd.h
-Rtypes.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/Rtypes.h
 
 /Users/dphan/ROOTPy/root-6.12.06-install/include/TNamed.h
 TObject.h
@@ -583,16 +467,6 @@ string
 -
 iosfwd
 -
-
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TRandom.h
-Math/TRandomEngine.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/Math/TRandomEngine.h
-TNamed.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TNamed.h
-
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TRandom3.h
-TRandom.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TRandom.h
 
 /Users/dphan/ROOTPy/root-6.12.06-install/include/TSchemaHelper.h
 RtypesCore.h
@@ -665,14 +539,6 @@ TString.h
 /Users/dphan/ROOTPy/root-6.12.06-install/include/TString.h
 TMap.h
 /Users/dphan/ROOTPy/root-6.12.06-install/include/TMap.h
-
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TVectorDfwd.h
-Rtypes.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/Rtypes.h
-
-/Users/dphan/ROOTPy/root-6.12.06-install/include/TVectorFfwd.h
-Rtypes.h
-/Users/dphan/ROOTPy/root-6.12.06-install/include/Rtypes.h
 
 /Users/dphan/ROOTPy/root-6.12.06-install/include/TVersionCheck.h
 RVersion.h
@@ -867,8 +733,6 @@ G4hIonisation.hh
 /Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/src/LSPrimaryGeneratorAction.cc
 LSPrimaryGeneratorAction.hh
 /Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/src/LSPrimaryGeneratorAction.hh
-TMath.h
-/Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/src/TMath.h
 
 /Users/dphan/nova.testbeam.cerenkov/optical.sim/nova.testbeam.cerenkov.simulation/src/LSRunAction.cc
 LSRunAction.hh
